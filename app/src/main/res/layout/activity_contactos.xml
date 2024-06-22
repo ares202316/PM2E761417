@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityContactos">
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Atras..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtcid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Buscar"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/listUsuario"
+        android:layout_width="361dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:choiceMode="singleChoice"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCompartir"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Compartir Contacto"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="615dp" />
+
+        <Button
+            android:id="@+id/btnVerimg"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Ver Imagen Contacto"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="615dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Actualizar Contacto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCompartir"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btneliminar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Eliminar Contacto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnVerimg"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
